@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Caculator</h2>
+    <form action="caculator.html">
+        <input id="num1">
+        <input id="num2">
+    </form>
+    <button onclick="add()">Addition(+)</button>
+    <button onclick="sub()">Subtraction(-)</button>
+    <button onclick="mul()">Multiplication(x)</button>
+    <button onclick="div()">Division(/)</button>
+    <p id="demoad"></p>
+    <p id="demosu"></p>
+    <p id="demomu"></p>
+    <p id="demodi"></p>
+</body>
+<script>
+    function add() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        let n1 = parseInt(a);
+        let n2 = parseInt(b);
+        let sum = n1 + n2;
+        document.getElementById("demoad").innerHTML = "Result Addition :" + sum
+    }
+    function sub() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        let n1 = parseInt(a);
+        let n2 = parseInt(b);
+        let sub = n1 - n2;
+        document.getElementById("demosu").innerHTML = "Result Subtraction :" + sub
+    }
+    function mul() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        let n1 = parseInt(a);
+        let n2 = parseInt(b);
+        let mul = n1 * n2;
+        document.getElementById("demomu").innerHTML = "Result Multiplication :" + mul
+    }
+    function div() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        let n1 = parseInt(a);
+        let n2 = parseInt(b);
+        let div = n1 / n2;
+        document.getElementById("demodi").innerHTML = "Result Multiplication :" + div
+    }
+</script>
+</html>
